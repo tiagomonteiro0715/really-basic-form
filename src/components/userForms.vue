@@ -2,19 +2,19 @@
   <div>
     <form>
       <label for="name">Name </label>
-      <input v-model="name" type="text" />
+      <input v-model="name" type="text" placeholder="Tomás mateus" />
       <br><br>
 
       <label for="age">Age </label>
-      <input v-model="age" type="text" />
+      <input v-model="age" type="text" placeholder="18"/>
       <br><br>
 
       <label for="email">Email </label>
-      <input v-model="email" type="email" />
+      <input v-model="email" type="email" placeholder="Tomás.mateus@gmail.com"/>
       <br><br>
 
       <label for="phoneNumber">Phone number </label>
-      <input v-model="phoneNumber" type="text" />
+      <input v-model="phoneNumber" type="text" placeholder="915637927"/>
       <br><br>
 
       <label for="password">Password </label>
@@ -25,6 +25,7 @@
       <input type="confirmPassword" v-model="confirmPassword" />
       <br><br>
 
+      <!--<input type="submit">-->
       <p>Name: {{ name }}</p>
       <p>Age: {{ age }}</p>
       <p>Email: {{ email }}</p>
@@ -42,10 +43,10 @@
 export default {
   data() {
     return {
-      name: 'Joe Exotic',
-      age: '19',
-      email: 'tca.monteiro@campus.fct.unl.pt',
-      phoneNumber: '918038828',
+      name: '',
+      age: '',
+      email: '',
+      phoneNumber: '',
       password: '',
       confirmPassword: ''
 
